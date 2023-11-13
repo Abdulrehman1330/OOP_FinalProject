@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Showroom {
@@ -6,14 +7,24 @@ public class Showroom {
     ArrayList<Models> cars = new ArrayList<>();
 
     public static void addNewUser(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your name");
-        String name = scanner.nextLine();
-        System.out.println("Enter a new username:");
-        String username = scanner.nextLine();
-        System.out.println("Enter your password:");
-        String password = scanner.nextLine();
-        users.add(new User(username,password,name));
+        int flag = 1;
+        String name,username,password;
+        while (flag == 1) {
+            Scanner scanner = new Scanner(System.in);
+            try {
+                System.out.println("Enter your name");
+                name = scanner.nextLine();
+                System.out.println("Enter a new username:");
+                username = scanner.nextLine();
+                System.out.println("Enter your password:");
+                password = scanner.nextLine();
+            }catch (InputMismatchException e){
+                System.out.println("Invalid input, please enter again!");
+                continue;
+            }
+            users.add(new User(username,password,name));
+            flag = -1;
+        }
         System.out.println(users.get(0));
     }
 

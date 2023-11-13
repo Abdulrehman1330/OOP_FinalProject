@@ -4,5 +4,6 @@ public class Main {
     public static void main(String[] args) {
 
             Showroom.addNewUser();
+            System.out.println(Models.COROLLA);
     }
 }

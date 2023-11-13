@@ -14,10 +14,22 @@ public class Showroom {
             try {
                 System.out.println("Enter your name");
                 name = scanner.nextLine();
+                if(name.equals("")){
+                    System.out.println("please enter valid input!");
+                    continue;
+                }
                 System.out.println("Enter a new username:");
                 username = scanner.nextLine();
+                if(username.equals("")){
+                    System.out.println("please enter valid input!");
+                    continue;
+                }
                 System.out.println("Enter your password:");
                 password = scanner.nextLine();
+                if(password.equals("")){
+                    System.out.println("please enter valid input!");
+                    continue;
+                }
             }catch (InputMismatchException e){
                 System.out.println("Invalid input, please enter again!");
                 continue;

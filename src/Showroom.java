@@ -14,13 +14,13 @@ public class Showroom {
             try {
                 System.out.println("Enter your name");
                 name = scanner.nextLine();
-                if(name.equals("")){
+                if(name.isEmpty()){
                     System.out.println("please enter valid input!");
                     continue;
                 }
                 System.out.println("Enter a new username:");
                 username = scanner.nextLine();
-                if(username.equals("")){
+                if(username.isEmpty()){
                     System.out.println("please enter valid input!");
                     continue;
                 }
@@ -29,7 +29,7 @@ public class Showroom {
                 if (password.length() < 8){
                     System.out.println("Password length must be at least 8 character");
                 }
-                if(password.equals("")){
+                if(password.isEmpty()){
                     System.out.println("please enter valid input!");
                     continue;
                 }

@@ -1,7 +1,7 @@
 public class User {
-    String username;
-    String password;
-    String name;
+    private String username;
+    private String password;
+    private String name;
 
     public String getUsername() {
         return username;
@@ -33,5 +33,14 @@ public class User {
         setUsername(username);
         setPassword(password);
         setName(name);
+    }
+
+    public boolean CheckPassword(String password){
+        if(this.password.equals(password)){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }

@@ -4,9 +4,11 @@ public enum Models {
     private int seats;
 
     private String name;
-    Models(int seat, String name){
+    private String engine;
+    Models(int seat, String name, String engine){
         this.seats = seat;
         this.name = name;
+        this.engine = engine;
     }
 
     @Override

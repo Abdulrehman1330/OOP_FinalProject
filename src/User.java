@@ -18,7 +18,7 @@ public class User {
     public void setPassword(String password) {
         if (password.length() < 8)
             System.out.println("Password must be at least 8 characters");
-        this.password = password;
+            this.password = password;
     }
 
     public String getName() {
@@ -43,4 +43,5 @@ public class User {
             return false;
         }
     }
+
 }

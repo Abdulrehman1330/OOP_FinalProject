@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70564486-2b38-4e18-9372-1ebf48639d14" name="Changes" comment="First Commit">
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-    </list>
+    <list default="true" id="70564486-2b38-4e18-9372-1ebf48639d14" name="Changes" comment="commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,23 +70,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699873727822</updated>
     </task>
-    <task id="LOCAL-00003" summary="First Commit">
-      <option name="closed" value="true" />
-      <created>1699876514059</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1699876514059</updated>
-    </task>
-    <task id="LOCAL-00004" summary="First Commit">
-      <option name="closed" value="true" />
-      <created>1699876570413</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1699876570413</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

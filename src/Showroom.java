@@ -26,6 +26,9 @@ public class Showroom {
                 }
                 System.out.println("Enter your password:");
                 password = scanner.nextLine();
+                if (password.length() < 8){
+                    System.out.println("Password length must be at least 8 character");
+                }
                 if(password.equals("")){
                     System.out.println("please enter valid input!");
                     continue;

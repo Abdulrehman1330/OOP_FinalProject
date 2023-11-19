@@ -6,26 +6,18 @@ public class Showroom {
     static ArrayList<User> users = new ArrayList<>();
     ArrayList<Models> cars = new ArrayList<>();
 
-    public static void addNewUser(){
+    public static void addNewUser(String name,String username,String password){
         int flag = 1;
-        String name,username,password;
         while (flag == 1) {
-            Scanner scanner = new Scanner(System.in);
             try {
-                System.out.println("Enter your name");
-                name = scanner.nextLine();
                 if(name.isEmpty()){
                     System.out.println("please enter valid input!");
                     continue;
                 }
-                System.out.println("Enter a new username:");
-                username = scanner.nextLine();
                 if(username.isEmpty()){
                     System.out.println("please enter valid input!");
                     continue;
                 }
-                System.out.println("Enter your password:");
-                password = scanner.nextLine();
                 if (password.length() < 8){
                     System.out.println("Password length must be at least 8 character");
                     continue;

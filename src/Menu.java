@@ -1,34 +1,54 @@
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.util.Scanner;
+import java.util.Set;
 
-public class Menu extends Frame {
+public class Menu extends Frame{
+    private TextField usernameField;
+    private TextField passwordField;
 
-//    private int no;
-//        Panel panel = new Panel();
-//        Menu(){
-//            Button RegButton = new Button("Register");
-//            Button LoginButton = new Button("Login");
-//
-//            setLayout(new GridLayout(4,5));
-//            add(RegButton);
-//            add(LoginButton);
-//            LoginButton.setSize(50,50);
-//            setSize(600,500);
-//            show();
-//
-//        }
-//
-//    public void signUp(){
-//        System.out.println("2. SignUp");
-//        Scanner scanner = new Scanner(System.in);
-//        no=scanner.nextInt();
-//        switch (no){
-//            case 1:
-//                break;
-//            case 2:
-//                Showroom.addNewUser();
-//        }
+    public Menu() {
+
+        setTitle("Login or Register");
+        setSize(300, 150);
+        setLayout(new FlowLayout());
+
+
+
+        Button loginButton = new Button("Login");
+        Button registerButton = new Button("Register");
+
+        add(loginButton);
+        add(registerButton);
+
+
+    }
+
+    public void login(){
+        setTitle("Login");
+        setSize(300, 150);
+        setLayout(new FlowLayout());
+
+        Label usernameLabel = new Label("Username:");
+        usernameField = new TextField(20);
+        Label passwordLabel = new Label("Password:");
+        passwordField = new TextField(20);
+        passwordField.setEchoChar('*');
+
+        add(usernameLabel);
+        add(usernameField);
+        add(passwordLabel);
+        add(passwordField);
+
+
+    }
+
+//    @Override
+//    public void actionPerformed(ActionEvent e) {
+//        if (e.getActionCommand().equals("Login")) {
+//            .showMessageDialog(this, "Button 1 clicked!");
 //    }
-
-
 }

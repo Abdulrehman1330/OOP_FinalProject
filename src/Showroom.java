@@ -39,5 +39,24 @@ public class Showroom {
         }
         System.out.println(users.get(0));
     }
+    public boolean login(String username, String password){
+        int flag = 1;
+        for (User user : users) {
+            if (user.getUsername().equals(username) && user.getPassword().equals(password)){
+                System.out.println("welcome" + user.getName());
+                flag = 0;
+                return true;
+            }
+            if (user.getUsername().equals(username)&& !user.getPassword().equals(password)){
+                System.out.println("Invalid Password");
+                flag = 0;
+                return false;
+            }
+        }
+        if (flag == 1){
+            System.out.println("No user found");
+        }
+        return false;
+    }
 
 }

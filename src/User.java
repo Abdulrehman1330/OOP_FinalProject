@@ -1,7 +1,11 @@
+import java.util.ArrayList;
+
 public class User {
     private String username;
     private String password;
     private String name;
+
+    private ArrayList<Models> cars = new ArrayList<>();
 
     public String getUsername() {
         return username;
@@ -40,6 +44,10 @@ public class User {
         else{
             return false;
         }
+    }
+
+    public void addCar(Models m){
+        cars.add(m);
     }
 
     @Override

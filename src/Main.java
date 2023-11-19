@@ -3,7 +3,10 @@
 public class Main {
     public static void main(String[] args) {
 
-            Showroom.addNewUser();
-            System.out.println(Models.COROLLA);
+//            Showroom.addNewUser();
+//            System.out.println(Models.COROLLA);
+            Menu menu = new Menu();
+            
+
     }
 }

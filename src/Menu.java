@@ -8,7 +8,7 @@ public class Menu extends Frame{
     public Menu() {
 
         setTitle("Login or Register");
-        setSize(300, 150);
+        setSize(1080, 1920);
         setLayout(new FlowLayout());
 
 

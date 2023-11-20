@@ -5,9 +5,7 @@ public class Main {
 
 //            Showroom.addNewUser();
 //            System.out.println(Models.COROLLA);
-            Menu menu = new Menu();
-            menu.show();
-            
-
+        Menu menu = new Menu();
+        menu.show();
     }
 }

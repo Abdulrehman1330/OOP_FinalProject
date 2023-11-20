@@ -1,0 +1,170 @@
+Index: src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,\r\n// then press Enter. You can now see whitespace characters in your code.\r\npublic class Main {\r\n    public static void main(String[] args) {\r\n\r\n//            Showroom.addNewUser();\r\n//            System.out.println(Models.COROLLA);\r\n            Menu menu = new Menu();\r\n            menu.show();\r\n            \r\n\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Main.java b/src/Main.java
+--- a/src/Main.java	(revision 7ceb3b5ff0d182e4821cd95addb57de76156cec8)
++++ b/src/Main.java	(date 1700474613858)
+@@ -3,11 +3,7 @@
+ public class Main {
+     public static void main(String[] args) {
+ 
+-//            Showroom.addNewUser();
+-//            System.out.println(Models.COROLLA);
+-            Menu menu = new Menu();
+-            menu.show();
+-            
+-
++            Showroom.addNewUser();
++            System.out.println(Models.COROLLA);
+     }
+ }
+\ No newline at end of file
+Index: src/Models.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public enum Models {\r\n    COROLLA(5,\"Corolla\", \"2NR-FE\", 1800, \"Michelin\", \"BI-PROJECTOR Led\", \"PETROL\"),YARIS(5,\"Yaris\", \"XP-150\", 1300, \"CONTINENTAL\", \"XENON\", \"PETROL\"),SUPRA(2,\"Supra\", \"B48\", 3700, \"MICHELIN SUPREMACY 3ST\", \"PROEJECTOR\", \"PETROL\"),FORTUNER(7,\"Fortuner\", \"2TR-FE\", 2800, \"YOKOHAMA\", \"Halogen headlamps\", \"PETROL\"),LANDCRUISER(7,\"Land Cruiser\", \"1VD-FTV\", 3000, \"PIRELLI\", \"HID headlamps\", \"PETROL\"),PRIUS(5,\"Prius\", \"2ZR-FXE\", 1500, \"BRIDGESTONE\",\"LED Bulbs\", \"PETROL & HYBRID\");\r\n\r\n    private final int seats;\r\n    private final String name;\r\n    private final String engine;\r\n    private final int engineSize;\r\n    private final String tyre;\r\n    private final String headlights;\r\n    private final String engineType;\r\n    Models(int seat, String name, String engine, int engineSize, String tyre, String headlights, String enginetype){\r\n        this.seats = seat;\r\n        this.name = name;\r\n        this.engine = engine;\r\n        this.engineSize = engineSize;\r\n        this.tyre= tyre;\r\n        this.headlights = headlights;\r\n        this.engineType = enginetype;\r\n    }\r\n\r\n    @Override\r\n    public String toString() {\r\n        return \"Toyota \" + name + '\\n' + \"FEATURES ARE AS BELOW\" + '\\n' +\r\n                \" Seats \" + seats + '\\n' +\r\n                \" Engine name \" + engine + '\\n' +\r\n                \" Engine Size \" + engineSize + '\\n' +\r\n                \" Tyres \" + tyre + '\\n' +\r\n                \" Headlights \" + headlights + '\\n' +\r\n                \" Engine Type \" + engineType;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Models.java b/src/Models.java
+--- a/src/Models.java	(revision 7ceb3b5ff0d182e4821cd95addb57de76156cec8)
++++ b/src/Models.java	(date 1700474617506)
+@@ -1,13 +1,13 @@
+ public enum Models {
+     COROLLA(5,"Corolla", "2NR-FE", 1800, "Michelin", "BI-PROJECTOR Led", "PETROL"),YARIS(5,"Yaris", "XP-150", 1300, "CONTINENTAL", "XENON", "PETROL"),SUPRA(2,"Supra", "B48", 3700, "MICHELIN SUPREMACY 3ST", "PROEJECTOR", "PETROL"),FORTUNER(7,"Fortuner", "2TR-FE", 2800, "YOKOHAMA", "Halogen headlamps", "PETROL"),LANDCRUISER(7,"Land Cruiser", "1VD-FTV", 3000, "PIRELLI", "HID headlamps", "PETROL"),PRIUS(5,"Prius", "2ZR-FXE", 1500, "BRIDGESTONE","LED Bulbs", "PETROL & HYBRID");
+ 
+-    private final int seats;
+-    private final String name;
+-    private final String engine;
+-    private final int engineSize;
+-    private final String tyre;
+-    private final String headlights;
+-    private final String engineType;
++    private int seats;
++    private String name;
++    private String engine;
++    private int engineSize;
++    private String tyre;
++    private String headlights;
++    private String enginetype;
+     Models(int seat, String name, String engine, int engineSize, String tyre, String headlights, String enginetype){
+         this.seats = seat;
+         this.name = name;
+@@ -15,7 +15,7 @@
+         this.engineSize = engineSize;
+         this.tyre= tyre;
+         this.headlights = headlights;
+-        this.engineType = enginetype;
++        this.enginetype = enginetype;
+     }
+ 
+     @Override
+@@ -26,6 +26,6 @@
+                 " Engine Size " + engineSize + '\n' +
+                 " Tyres " + tyre + '\n' +
+                 " Headlights " + headlights + '\n' +
+-                " Engine Type " + engineType;
++                " Engine Type " + enginetype;
+     }
+ }
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_20\" default=\"true\" project-jdk-name=\"20\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 7ceb3b5ff0d182e4821cd95addb57de76156cec8)
++++ b/.idea/misc.xml	(date 1700474617890)
+@@ -1,5 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_20" default="true" project-jdk-name="20" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="20" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"70564486-2b38-4e18-9372-1ebf48639d14\" name=\"Changes\" comment=\"First Commit\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 4\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2Y7MsVVv3PSe9wO5S18yq7Dd4EW\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/ABDUL REHMAN/IdeaProjects/ToyotaShowroom/src/Main.java&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"70564486-2b38-4e18-9372-1ebf48639d14\" name=\"Changes\" comment=\"\" />\r\n      <created>1699872372025</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1699872372025</updated>\r\n      <workItem from=\"1699872373002\" duration=\"1000\" />\r\n      <workItem from=\"1699872575408\" duration=\"1580000\" />\r\n      <workItem from=\"1700047665117\" duration=\"135000\" />\r\n      <workItem from=\"1700047873443\" duration=\"2707000\" />\r\n      <workItem from=\"1700053955772\" duration=\"3659000\" />\r\n      <workItem from=\"1700379679882\" duration=\"5621000\" />\r\n      <workItem from=\"1700422806747\" duration=\"719000\" />\r\n      <workItem from=\"1700472875002\" duration=\"708000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1699873148873</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1699873148873</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1699873727822</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1699873727822</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"First Commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1699877497208</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1699877497208</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"First Commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1700388789878</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700388789878</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"First Commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1700389874672</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700389874672</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"First Commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1700424454345</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700424454345</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"7\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"commit\" />\r\n    <MESSAGE value=\"First Commit\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"First Commit\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 7ceb3b5ff0d182e4821cd95addb57de76156cec8)
++++ b/.idea/workspace.xml	(date 1700475372292)
+@@ -4,8 +4,12 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="70564486-2b38-4e18-9372-1ebf48639d14" name="Changes" comment="First Commit">
++    <list default="true" id="70564486-2b38-4e18-9372-1ebf48639d14" name="Changes" comment="commit">
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_11_2023_4_48_pm__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_11_2023_4_48_pm__Changes_.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Models.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -55,12 +59,6 @@
+       <updated>1699872372025</updated>
+       <workItem from="1699872373002" duration="1000" />
+       <workItem from="1699872575408" duration="1580000" />
+-      <workItem from="1700047665117" duration="135000" />
+-      <workItem from="1700047873443" duration="2707000" />
+-      <workItem from="1700053955772" duration="3659000" />
+-      <workItem from="1700379679882" duration="5621000" />
+-      <workItem from="1700422806747" duration="719000" />
+-      <workItem from="1700472875002" duration="708000" />
+     </task>
+     <task id="LOCAL-00001" summary="commit">
+       <option name="closed" value="true" />
+@@ -78,39 +76,7 @@
+       <option name="project" value="LOCAL" />
+       <updated>1699873727822</updated>
+     </task>
+-    <task id="LOCAL-00003" summary="First Commit">
+-      <option name="closed" value="true" />
+-      <created>1699877497208</created>
+-      <option name="number" value="00003" />
+-      <option name="presentableId" value="LOCAL-00003" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1699877497208</updated>
+-    </task>
+-    <task id="LOCAL-00004" summary="First Commit">
+-      <option name="closed" value="true" />
+-      <created>1700388789878</created>
+-      <option name="number" value="00004" />
+-      <option name="presentableId" value="LOCAL-00004" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1700388789878</updated>
+-    </task>
+-    <task id="LOCAL-00005" summary="First Commit">
+-      <option name="closed" value="true" />
+-      <created>1700389874672</created>
+-      <option name="number" value="00005" />
+-      <option name="presentableId" value="LOCAL-00005" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1700389874672</updated>
+-    </task>
+-    <task id="LOCAL-00006" summary="First Commit">
+-      <option name="closed" value="true" />
+-      <created>1700424454345</created>
+-      <option name="number" value="00006" />
+-      <option name="presentableId" value="LOCAL-00006" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1700424454345</updated>
+-    </task>
+-    <option name="localTasksCounter" value="7" />
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">

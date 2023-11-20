@@ -4,6 +4,21 @@ public class User {
     private String username;
     private String password;
     private String name;
+    private String gender;
+    private int ID;
+    private String email;
+    private int number;
+
+    public User(String username, String password, String name, String gender, int ID, String email, int number, ArrayList<Models> cars) {
+        this.username = username;
+        this.password = password;
+        this.name = name;
+        this.gender = gender;
+        this.ID = ID;
+        this.email = email;
+        this.number = number;
+        this.cars = cars;
+    }
 
     private ArrayList<Models> cars = new ArrayList<>();
 
@@ -31,10 +46,45 @@ public class User {
         this.name = name;
     }
 
-    public User(String username, String password, String name) {
-        setUsername(username);
-        setPassword(password);
-        setName(name);
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public ArrayList<Models> getCars() {
+        return cars;
+    }
+
+    public void setCars(ArrayList<Models> cars) {
+        this.cars = cars;
     }
 
     public boolean CheckPassword(String password){

@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.InputMismatchException;
-import java.util.Scanner;
 
 public class Showroom {
     static ArrayList<User> users = new ArrayList<>();
